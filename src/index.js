@@ -14,6 +14,8 @@ formEl.addEventListener('submit', onFormElSubmit);
 buttonLoadMoreEl.addEventListener('click', onButtonLoadMoreClick);
 
 async function onFormElSubmit(event) {
+  page = 1;
+
   event.preventDefault();
   buttonLoadMoreEl.hidden = false;
   galleryEl.innerHTML = '';
